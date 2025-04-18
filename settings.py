@@ -51,9 +51,9 @@ def initialize_settings():
         st.session_state["intent_agent_settings"]["sql_rag_query_tool_description"] = DEFUALT_SQL_RAG_QUERY_TOOL_DESCRIPTION
         st.session_state["intent_agent_settings"]["web_scraper_query_tool_description"] = DEFAULT_WEB_SCRAPER_QUERY_TOOL_DESCRIPTION
         
-        st.session_state["intent_agent_settings"]["use_raptor"] = False
-        st.session_state["intent_agent_settings"]["use_sql_rag"] = False
-        st.session_state["intent_agent_settings"]["use_web_scraper"] = False
+        st.session_state["intent_agent_settings"]["use_raptor"] = True
+        st.session_state["intent_agent_settings"]["use_sql_rag"] = True
+        st.session_state["intent_agent_settings"]["use_web_scraper"] = True
     
         # RAPTOR
         st.session_state["intent_agent_settings"]["similarity_top_k"] = 6
